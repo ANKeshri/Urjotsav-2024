@@ -5,7 +5,15 @@ export default function Header() {
 
     return (
         <>
-            <h1 className='text-center text-3xl'>Header</h1>
+            <div className='flex  justify-end mt-5 mr-3'>
+                <div className='flex space-x-14'>
+                <div className='flex hover:cursor-pointer'>Home</div>
+               <div className='flex hover:cursor-pointer'>About Us</div>
+               <div className='flex hover:cursor-pointer'>Contact</div>
+               <div className='flex hover:cursor-pointer' >Brochure</div>
+                </div>
+               
+            </div>
         </>
     )
 }
