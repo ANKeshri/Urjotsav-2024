@@ -1,6 +1,6 @@
 
 import Header from './components/Header'
-import LandingPage from "./images/Landing Page.png"
+import LandingPage from "./images/Landing Page.jpg"
 import Designer from "./images/Designer.png"
 import '../src/App.css'
 import Cursor from '../src/components/Cursor'
