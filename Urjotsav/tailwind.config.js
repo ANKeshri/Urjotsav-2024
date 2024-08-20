@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily : {
-       Roboto :["Roboto","sans-serif"]
+       Sankofa :["Sankofa Display","sans-serif"]
       }
     },
    
