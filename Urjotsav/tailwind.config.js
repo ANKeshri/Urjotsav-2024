@@ -5,7 +5,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        Sankofa:["Sankofa Display","sans-serif"],
+        Megrim:["Megrim","sans-serif"],
+        Jost:["Jost","sans-serif"]
+      }
+    },
     
   },
   plugins: [],
