@@ -6,12 +6,14 @@ export default {
   ],
   theme: {
     extend: {
-      fontFamily : {
-       Sankofa :["Sankofa Display","sans-serif"]
+
+      fontFamily:{
+        Sankofa:["Sankofa Display","sans-serif"],
+        Megrim:["Megrim","sans-serif"],
+        Jost:["Jost","sans-serif"]
       }
     },
-   
-    
+
   },
   plugins: [],
 }
