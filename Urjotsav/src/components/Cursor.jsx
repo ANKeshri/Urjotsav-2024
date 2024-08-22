@@ -29,7 +29,7 @@ function Cursor() {
             <div onMouseEnter={()=>{gsap.to("#cursor",{scale:8 , duration:0.3})}}
              onMouseLeave={()=>{gsap.to("#cursor",{scale:1 , duration:0.3})}}
 
-              className='text-9xl text-white font-Megrim'>URJOTSAV</div>
+              className='text-9xl text-white font-Megrim flex '>URJOTSAV</div>
 
         </>
     )
