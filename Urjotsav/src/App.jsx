@@ -20,7 +20,7 @@ function App() {
       scale: 3.2,
       scrollTrigger: {
         trigger: "#image",
-        start: "top 15%",
+        start: "top 19%",
         end: "bottom",
         scrub: true,
         fastScrollEnd: true,
@@ -54,7 +54,7 @@ function App() {
           </div>
         </div>
 
-        <div className=' flex items-center justify-center flex-col mt-8 h-[85vh]   '>
+        <div className=' flex items-center justify-center flex-col mt-10 h-[85vh]   '>
         <div id='Urjotsav_title' className='h-auto w-[75vw] ' style={{ textAlign: 'center', color: 'white', fontSize: 150, fontFamily: 'Megrim', fontWeight: '500', letterSpacing: 6, wordWrap: 'break-word'}}>ABOUT US</div>
         <div className='h-auto w-[79vw] z-20 relative' style={{ textAlign: 'center', color: 'white', fontSize: 30, fontFamily: 'Jost', fontWeight: '300', letterSpacing: 1.20, wordWrap: 'break-word'}}>Urjotsav, a prestigious national-level inter-collegiate annual technical and entrepreneurial festival hosted by the Rajiv Gandhi Institute of Petroleum Technology, is orchestrated with meticulous care by the Science and Technical Council on an annual basis. This extraordinary endeavor stands as a testament to the proactive dedication of our students, who strive ceaselessly to craft an event that not only exudes grandeur but also sparks profound intellectual curiosity within the minds of the intellectually inclined.<br/>The festival is deeply committed to furnishing a robust platform wherein the potential industry leaders of tomorrow can unveil their prodigious talents, and where the young minds of today can engage in collaboration, strategic planning, and execute a spectacular celebration, thus instilling in them invaluable leadership skills and fostering the spirit of teamwork among its participants.</div>
 
