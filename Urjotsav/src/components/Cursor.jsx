@@ -23,9 +23,11 @@ function Cursor() {
 
     return (
         <>
-            <div id="cursor" className='h-5 w-5 bg-white mix-blend-overlay rounded-full top-0 absolute left-0 pointer-events-none'>
+            <div id="cursor" className=' w-5 bg-white mix-blend-overlay rounded-full top-0 absolute left-0 pointer-events-none'>
             </div>
-
+            <div className='w-full flex items-center justify-center hsc'>
+                <Cursor/>
+            </div>
             <div onMouseEnter={()=>{gsap.to("#cursor",{scale:8 , duration:0.3})}}
              onMouseLeave={()=>{gsap.to("#cursor",{scale:1 , duration:0.3})}}
 

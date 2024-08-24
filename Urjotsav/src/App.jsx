@@ -6,7 +6,7 @@ import Cursor from '../src/components/Cursor'
 import planet from "../src/images/planet.png"
 import { Parallax, ParallaxLayer } from "@react-spring/parallax"
 import { gsap } from 'gsap'
-import {useGSAP} from "@gsap/react"
+import { useGSAP } from "@gsap/react"
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 function App() {
@@ -15,39 +15,40 @@ function App() {
   gsap.registerPlugin(ScrollTrigger)
 
   useGSAP(() => {
-       gsap.to("#image",{
-         
-          y:200,
-          scale:3,
-          scrollTrigger:{
-            trigger:"#image",
-            start:"top 15%",
-            end:"bottom",
-            scrub:true,
-            fastScrollEnd:true,
-           
-            
-          }
-       })
+    gsap.to("#image", {
+
+      y: 200,
+      scale: 3.2,
+      scrollTrigger: {
+        trigger: "#image",
+        start: "top 15%",
+        end: "bottom",
+        scrub: true,
+        fastScrollEnd: true,
+
+
+      }
+    })
   })
-   
+
   return (
 
     <>
-     <div style={{backgroundImage:`url(${Layer1})`,backgroundPosition:"center",backgroundSize:"cover"}} className='w-full h-[200vh] overflow-hidden' >
-      <div  className='w-full h-screen'>
-       <Header/>
-      
-       <div className='h-screen flex p-16  justify-center'>
-        
-        <img id='image' src='../src/images/planet.png'></img>
-       </div>
-      </div>
+      <div style={{ backgroundImage: `url(${Layer1})`, backgroundPosition: "center", backgroundSize: "cover" }} className='w-full h-[200vh] overflow-hidden' >
+        <div className='w-full h-screen'>
+          <Header />
 
-      <div  className='w-full h-screen'>
+          <div></div>
 
+          <div className='h-screen flex p-16  justify-center mt-4'>
+            <img id='image' src='../src/images/planet.png'></img>
+          </div>
+        </div>
+
+        <div className='w-full h-screen'>
+
+        </div>
       </div>
-     </div>
     </>
 
 
