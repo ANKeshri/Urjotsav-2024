@@ -5,7 +5,7 @@ export default function Header() {
 
     return (
        
-
+          <>
            <div className='flex space-x-20 text-white justify-center  mr-10 py-4 '>
         
             <div className='flex transition-all hover:cursor-pointer hover:scale-125 font-Jost '>HOME</div>
@@ -13,10 +13,11 @@ export default function Header() {
            <div className='flex transition-all hover:cursor-pointer hover:scale-125 font-Jost '>EVENTS</div>
            <div className='flex transition-all hover:cursor-pointer hover:scale-125 font-Jost '>CONTACT</div>
            <div className='flex transition-all hover:cursor-pointer hover:scale-125 font-Jost ' >BROCHURE</div>
-           
+           <div className='flex transition-all hover:cursor-pointer hover:scale-125 font-Jost ' >REGISTER</div>
            
         </div> 
        
+        </>
             
        
     )

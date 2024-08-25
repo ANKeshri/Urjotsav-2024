@@ -16,7 +16,7 @@ function App() {
   useGSAP(() => {
     gsap.to("#image", {
      y:50,
-      scale: 3.2,
+      scale: 3.5,
       scrollTrigger: {
         trigger: "#image",
         start: "top 19%",
@@ -36,7 +36,7 @@ function App() {
         fastScrollEnd: true,
       }
     });
-
+   
    
   });
 
