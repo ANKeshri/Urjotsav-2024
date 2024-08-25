@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "@gsap/react": "^2.1.1",
-    "react-scroll-parallax": "^3.4.5"
-  }
-}
