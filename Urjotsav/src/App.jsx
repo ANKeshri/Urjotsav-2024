@@ -12,6 +12,9 @@ function App() {
 
   gsap.registerPlugin(useGSAP);
   gsap.registerPlugin(ScrollTrigger);
+  
+  
+
 
   useGSAP(() => {
     gsap.to("#image", {
@@ -19,10 +22,11 @@ function App() {
       scale: 3.5,
       scrollTrigger: {
         trigger: "#image",
-        start: "top 19%",
+        start: "top %",
         end: "bottom",
         scrub: true,
         fastScrollEnd: true,
+        markers:true
       }
     });
  
@@ -51,8 +55,8 @@ function App() {
             <h1 id='title' className='text-9xl text-white font-Megrim'>URJOTSAV</h1>
           </div>
 
-          <div className='h-screen flex p-16 justify-center mt-4'>
-            <img id='image' src={planet} className='relative z-10' alt="Planet" />
+          <div id='image' className='h-screen flex p-16 justify-center items-end mt-4'>
+            <img  src={planet} className='relative z-10 w-[75%]' alt="Planet" />
           </div>
         </div>
         <About/>
