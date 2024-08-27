@@ -18,7 +18,7 @@ function App() {
 
   useGSAP(() => {
     gsap.to("#image", {
-     y:50,
+     y:300,
       scale: 3.2,
       scrollTrigger: {
         trigger: "#image",
@@ -46,7 +46,7 @@ function App() {
 
   return (
     <>
-      <div style={{ backgroundImage: `url(${Layer1})`, backgroundPosition: "center", backgroundSize: "cover" }} className='w-full h-[200vh] overflow-hidden z-4'>
+      <div style={{ backgroundImage: `url(${Layer1})`, backgroundPosition: "center", backgroundSize: "cover" }} className='w-full h-auto overflow-hidden z-4'>
 
         <div className='w-full h-screen'>
           <Header />
@@ -59,7 +59,10 @@ function App() {
             <img  src={planet} className='relative z-10 w-[75%]' alt="Planet" />
           </div>
         </div>
+        
         <About/>
+       
+       
         <Contact/>
 
       </div>
