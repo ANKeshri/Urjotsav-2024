@@ -1,72 +1,29 @@
-import Header from './components/Header';
-import Layer1 from "./images/Layer1.jpg";
-import '../src/App.css';
-import About from '../src/components/About';
-import planet from "../src/images/planet.png";
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { gsap } from 'gsap';
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Layout from './Layout';
+import About from './components/About';
 import Contact from './components/Contact';
+import planet from "../src/images/planet.png"
+import Home from './components/Home';
+
 
 function App() {
 
-  gsap.registerPlugin(useGSAP);
-  gsap.registerPlugin(ScrollTrigger);
-  
-  
-
-
-  useGSAP(() => {
-    gsap.to("#image", {
-     y:300,
-      scale: 3.2,
-      scrollTrigger: {
-        trigger: "#image",
-        start: "top %",
-        end: "bottom",
-        scrub: true,
-        fastScrollEnd: true,
-       
-      }
-    });
  
-    gsap.to("#name", {
-      y: -200,
-      scrollTrigger: {
-        trigger: "#name",
-        start: "top 1%",
-        end: "bottom",
-        scrub: true,
-        fastScrollEnd: true,
-      }
-    });
-   
-   
-  });
 
   return (
-    <>
-      <div style={{ backgroundImage: `url(${Layer1})`, backgroundPosition: "center", backgroundSize: "cover" }} className='w-full h-auto overflow-hidden z-4'>
-
-        <div className='w-full h-screen'>
-          <Header />
-
-          <div id='name' className='flex items-center justify-center h-screen w-full absolute'>
-            <h1 id='title' className='text-9xl text-white font-Megrim'>URJOTSAV</h1>
-          </div>
-
-          <div id='image' className='h-screen flex p-16 justify-center items-end mt-4'>
-            <img  src={planet} className='relative z-10 w-[75%]' alt="Planet" />
-          </div>
-        </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home/>}/>
         
-        <About/>
-       
-       
-        <Contact/>
-
-      </div>
-    </>
+          <Route path="contact" element={<Contact />} />
+        </Route>
+      </Routes>
+    </Router>
   );
 }
 
