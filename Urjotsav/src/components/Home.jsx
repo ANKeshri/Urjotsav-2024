@@ -16,7 +16,7 @@ function Home() {
 
   useGSAP(() => {
     gsap.to("#image", {
-      y: 300,
+      y: 200,
       scale: 3.2,
       scrollTrigger: {
         trigger: "#image",
